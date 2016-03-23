@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C8FCE53-A3E6-4831-ACB4-81325276CBD1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>REI.SFDC.Commom.Services</RootNamespace>
+    <AssemblyName>REI.SFDC.Commom.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\REI.SFDC.Partner.WSDL.Services\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\REI.SFDC.Tooling.WSDL.Services\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.createResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.DebuggingInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.deleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.DeleteResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.DescribeNounResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.DescribeTab.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.DescribeThemeItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.getDeletedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.GetDeletedResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.getUpdatedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.GetUpdatedResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.GetUserInfoResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.KnowledgeSettings.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.LeadConvertResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.LimitInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.loginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.LoginResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.logoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.mergeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.MergeResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.processResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.queryAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.queryMoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.queryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.QueryResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.retrieveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.SaveResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.searchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.sendEmailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.SendEmailResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.SetPasswordResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.sObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.undeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.UndeleteResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.updateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.upsertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\REI.SFDC.Commom.Services.REI.SFDC.Partner.WSDL.Services.UpsertResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\wsdl.wsdl" />
+    <None Include="Service References\REI.SFDC.Tooling.WSDL.Services\tooling.wsdl" />
+    <None Include="Web References\REI.SFDC.Tooling.WSDL.Services\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+    </None>
+    <None Include="Web References\REI.SFDC.Tooling.WSDL.Services\tooling.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\REI.SFDC.Partner.WSDL.Services\" />
+    <WCFMetadataStorage Include="Service References\REI.SFDC.Tooling.WSDL.Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\REI.SFDC.Partner.WSDL.Services\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\REI.SFDC.Tooling.WSDL.Services\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\REI.SFDC.Tooling.WSDL.Services\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\REI.SFDC.Tooling.WSDL.Services\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Users\william.mayfield\Documents\___SYNCHFOLDER\_SaaS CM\tooling.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\REI.SFDC.Tooling.WSDL.Services\</RelPath>
+      <UpdateFromURL>C:\Users\william.mayfield\Documents\___SYNCHFOLDER\_SaaS CM\tooling.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>REI_SFDC_Commom_Services_REI_SFDC_Tooling_WSDL_Services_SforceServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
